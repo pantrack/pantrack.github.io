@@ -23,6 +23,10 @@ a {
 	color: #8d0064;
 	text-decoration: underline;
 }
+a img:hover {
+	transform: scale(1.2);
+	transition: all 150ms linear;
+}
 #main-container {
 	width: 100%;
 	flex: 1;
