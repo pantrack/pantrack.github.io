@@ -66,6 +66,7 @@ p {
 	padding-bottom: 1rem;
 	font-size: 1.2rem;
 	line-height: 1.5rem;
+	text-align: justify;
 }
 #social-container {
 	width: 40%;
@@ -110,9 +111,6 @@ p {
 	}
 	#right-container {
 		display: none;
-	}
-	p {
-		text-align: justify;
 	}
 	#social-container {
 		width: 100%;
