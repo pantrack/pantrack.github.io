@@ -1,0 +1,50 @@
+//////////////////////////////////////////////////////////////////////////////////////////////
+//// THIS FUNCTION SETS THE VALUE OF REM BASED ON THE USER'S SCREEN SIZE AND ASPECT RATIO ////
+//////////////////////////////////////////////////////////////////////////////////////////////
+//// min sets minimum REM size in px /////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+function scaleRootSize(min) {
+	var vw = window.innerWidth/100;
+	var vh = window.innerHeight/100;
+	var pageWidth = window.innerWidth;
+	var pageHeight = window.innerHeight;
+	var aspectRatio = getAspectRatio();
+	console.log(aspectRatio);
+	if (pageWidth > pageHeight && vw > min) {
+		window.document.documentElement.style.fontSize = vw + "px";
+	} else if (vh + aspectRatio > min) {
+		window.document.documentElement.style.fontSize = vh + aspectRatio + "px";
+	} else {
+		window.document.documentElement.style.fontSize = min + "px";
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+////// THIS FUNCTION RETURNS THE ASPECT RATIO OF THE USER'S DEVICE ///////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+function getAspectRatio() {
+	var pageWidth = window.innerWidth;
+	var pageHeight = window.innerHeight;
+    if (pageWidth > pageHeight) {
+    	var aspectRatio = pageWidth/pageHeight;
+    } else if (pageHeight > pageWidth){
+    	var aspectRatio = pageHeight/pageWidth;
+    } else {
+    	var aspectRatio = 1;
+    }
+    return aspectRatio;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+////// EVENT LISTENERS////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+window.addEventListener("load", function() {
+    scaleRootSize(8);
+});
+
+window.addEventListener("resize", function() {
+    scaleRootSize(8);
+});
