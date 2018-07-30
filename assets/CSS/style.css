@@ -47,8 +47,8 @@ p {
 }
 #left-container {
 	float: left;
-	padding-left: 5%;
-    max-width: 55%;
+	padding-left: 3%;
+    max-width: 52%;
 }
 #right-container {
 	width: 39%;
@@ -119,6 +119,7 @@ p {
 @media screen and (max-width: 768px) {
 	#left-container {
 		max-width: 90%;
+		padding-left: 5%;
 	}
 	#right-container {
 		display: none;
