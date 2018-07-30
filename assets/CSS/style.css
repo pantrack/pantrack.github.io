@@ -19,11 +19,11 @@ footer {
 	margin-top: 1rem;
 }
 a {
-	color: #8d0064;
+	color: #d42988;
 	text-decoration: underline;
 }
 a:visited {
-	color: #ccc;
+	color: #8d0064;
 }
 a img:hover {
 	transform: scale(1.2);
