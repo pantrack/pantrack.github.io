@@ -113,7 +113,7 @@ p {
     margin-right: 5%;
     margin-top: .5rem;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
 	#left-container {
 		max-width: 90%;
 	}
