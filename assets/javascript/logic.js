@@ -42,9 +42,9 @@ function getAspectRatio() {
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 window.addEventListener("load", function() {
-    scaleRootSize(8);
+    scaleRootSize(10);
 });
 
 window.addEventListener("resize", function() {
-    scaleRootSize(8);
+    scaleRootSize(10);
 });
