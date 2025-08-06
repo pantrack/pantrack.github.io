@@ -62,7 +62,7 @@ p {
 .contact-icon {
 	width: 3rem;
 	margin: 0 auto;
-	border-radius: 6px;
+	border-radius: 3px;
 }
 #social-icon-container {
 	display: flex;
@@ -70,7 +70,7 @@ p {
 }
 .social-icon {
 	width: 2.5rem;
-	border-radius: 6px;
+	border-radius: 3px;
 }
 #main-image {
 	width: 100%;
